@@ -18,5 +18,5 @@ function roomCard(data){
 roomCard(rooms)
 
 function goToRoom(id){
-    location.pathname="/pages/room.html/"+id
+    location.pathname="/pages/room.html"
 }
