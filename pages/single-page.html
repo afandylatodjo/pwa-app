@@ -3,10 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="/script/room-spa.js" defer type="application/javascript"></script>
+    <title>Room</title>
+    <link rel="stylesheet" href="/style/style.css">
 </head>
 <body>
+    <main>
+        <div id="room-root">
+            
+        </div>
+
+        <button class="btn"><a href="/index.html">Go To Home</a></button>
+        <button class="btn"><a href="/pages/room-list.html">Go To Room List</a></button>
+ 
+    </main>
+   
     
+    <script type="module">
+        import {Render} from "/script/room-spa.js"
+        Render();
+    </script>
 </body>
 </html>

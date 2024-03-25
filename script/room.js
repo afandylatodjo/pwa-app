@@ -7,5 +7,6 @@ function include(file){
     document.getElementsByTagName("head").item(0).appendChild(script);
 }
 
-include("/static-data/rooms-data.js");
-include("/script/room-list.js");
+// include("/static-data/rooms-data.js");
+// include("/script/room-spa.js");
+// include("/script/room-list.js");
