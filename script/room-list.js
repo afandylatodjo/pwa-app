@@ -7,7 +7,7 @@ function roomCard(data){
             >
             <div class="card-content">
                 <span>Room ${element.id}</span>
-                <img src="/image/icon-512x512.png" alt="" width="10%" height="auto"> 
+                <img src="/images/icon512_rounded.png" alt="" width="10%" height="auto"> 
                 <p>Harga per Bulan <span>${element.price}</span></p>
             </div>
         </div>
