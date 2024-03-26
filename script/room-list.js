@@ -6,13 +6,11 @@ function roomCard(data){
     cardContainer.classList.add("card-container")
     cardContainer.onclick = () => {
         // goToRoom(element.id); 
-        Notification.requestPermission().then(mes => {
 
         if(Notification.permission === 'granted'){
             new Notification("This is notification", {body:"Notification", icon: "/images/icon512_rounded.png"})
         }
 
-        })
     }
 
     cardContainer.innerHTML += `
