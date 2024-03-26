@@ -5,7 +5,6 @@ async function FetchRoom(url){
     return resp || {"message": "Cannot retrieved the data from api"};
 }
 
-
 const Comp = ({id, image}) =>{
     let r = rooms.find(e => +e.id === +id);
     return(

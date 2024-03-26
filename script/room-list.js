@@ -4,7 +4,11 @@ function roomCard(data){
     data.forEach(element => {
     let cardContainer = document.createElement("div")
     cardContainer.classList.add("card-container")
-    cardContainer.onclick = () => goToRoom(element.id)
+    cardContainer.onclick = () => {
+        // goToRoom(element.id); 
+        Notification.requestPermission().then((res) => console.log(res));
+        // console.log(new Notification("Hello"));
+    }
     cardContainer.innerHTML += `
         <div class="card-content">
             <span>Room ${element.id}</span>
