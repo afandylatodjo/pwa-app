@@ -7,6 +7,7 @@ function roomCard(data){
     cardContainer.onclick = () => {
         // goToRoom(element.id); 
 
+        alert(Notification.permission)
         if(Notification.permission === 'granted'){
             new Notification("This is notification", {body:"Notification", icon: "/images/icon512_rounded.png"})
         }
