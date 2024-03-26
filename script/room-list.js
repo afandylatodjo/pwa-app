@@ -6,8 +6,10 @@ function roomCard(data){
     cardContainer.classList.add("card-container")
     cardContainer.onclick = () => {
         // goToRoom(element.id); 
-        Notification.requestPermission().then((res) => console.log(res));
-        // console.log(new Notification("Hello"));
+        navigator.serviceWorker.ready.then(sw =>{
+            sw.showNotification("Notif", {body:"Notif ini"});
+        })
+        
     }
     cardContainer.innerHTML += `
         <div class="card-content">
