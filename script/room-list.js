@@ -6,11 +6,15 @@ function roomCard(data){
     cardContainer.classList.add("card-container")
     cardContainer.onclick = () => {
         // goToRoom(element.id); 
-        navigator.serviceWorker.ready.then(sw =>{
-            sw.showNotification("Notif", {body:"Notif ini"});
+        Notification.requestPermission().then(mes => {
+
+        if(Notification.permission === 'granted'){
+            new Notification("This is notification")
+        }
+
         })
-        
     }
+
     cardContainer.innerHTML += `
         <div class="card-content">
             <span>Room ${element.id}</span>
@@ -34,9 +38,11 @@ function roomCard(data){
     })
 
 }
-roomCard(rooms)
 
 function goToRoom(id){
     location.href="/pages/single-page.html?id="+id
 }
+
+roomCard(rooms)
+
 

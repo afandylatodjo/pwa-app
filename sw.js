@@ -26,6 +26,7 @@ self.addEventListener("install", event => {
         )
     )
 })
+//Install Event End
 
 
 //Activate Event
@@ -39,6 +40,7 @@ self.addEventListener("activate", e=>{
     );
 
 });
+//Active Event End
 
 
 //Fetch Event
@@ -67,17 +69,4 @@ async function staleWhileRevalidate(e){
     )
 
 }
-
-
-//Deprecated
-//Network Response first then Cache
-// async function networkThenCache(e){
-//     return caches.open(CACHE_NAME).then(cache =>{
-//         return cache.match(e.request).then(resp =>{
-//             return resp || fetch(e.request).then(res => {
-//                 cache.put(e.request, res.clone());
-//                 return res;
-//             })
-//         })
-//     })
-// }
+//Fetch Even End
