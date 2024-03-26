@@ -9,7 +9,7 @@ function roomCard(data){
         Notification.requestPermission().then(mes => {
 
         if(Notification.permission === 'granted'){
-            new Notification("This is notification")
+            new Notification("This is notification", {body:"Notification", icon: "/images/icon512_rounded.png"})
         }
 
         })
