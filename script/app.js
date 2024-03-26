@@ -6,5 +6,5 @@ if("serviceWorker" in navigator){
 
 
 
-
+Notification.requestPermission()
 
