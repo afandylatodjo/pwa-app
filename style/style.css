@@ -23,6 +23,9 @@ button.btn>a{
     transition: 0.3s;
     cursor: pointer;
 }
+.card-content>span,p{
+    cursor: none;
+}
 
 .card-content > img{
     align-self: center;

@@ -5,12 +5,12 @@ function roomCard(data){
     let cardContainer = document.createElement("div")
     cardContainer.classList.add("card-container")
     cardContainer.onclick = () => {
-        // goToRoom(element.id); 
+        goToRoom(element.id); 
 
-        alert(Notification.permission)
-        if(Notification.permission === 'granted'){
-            new Notification("This is notification", {body:"Notification", icon: "/images/icon512_rounded.png"})
-        }
+        // alert(Notification.permission)
+        // if(Notification.permission === 'granted'){
+        //     new Notification("This is notification", {body:"Notification", icon: "/images/icon512_rounded.png"})
+        // }
 
     }
 

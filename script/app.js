@@ -4,7 +4,12 @@ if("serviceWorker" in navigator){
     .catch(() => console.log("Service Worker not registered"))
 }
 
+if("PushManager" in window){
+    // alert("Push Manager in Window");
+    console.log("Push Manager in window");
+}
 
-
-Notification.requestPermission()
+if("Notification" in window){
+    Notification.requestPermission()
+}
 
