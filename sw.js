@@ -112,7 +112,8 @@ const urlB64ToUint8Array = base64String => {
 
 //Save Subscription
 const saveSubscription = async (subs) => {
-    const url = "http://127.0.0.1:8080/save-subscribe";
+    let nurl = "https://af84-36-85-223-54.ngrok-free.app"
+    const url = nurl+"/save-subscribe";
     const resp = await fetch(url, {
         method: "post",
         headers: {

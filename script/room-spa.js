@@ -6,8 +6,9 @@ async function FetchRoom(url){
 }
 
 async function fetchPush(){
+    let url = "https://af84-36-85-223-54.ngrok-free.app";
     let msg = {"message": "Cannot retrieved data"}
-    let resp = await fetch("http://127.0.0.1:8080/push", {
+    let resp = await fetch(url+"/push", {
         method: "get",
         mode: "cors"
     }).then(res => {
@@ -19,7 +20,8 @@ async function fetchPush(){
 
 
 async function notif(){
-    let resp = await fetch("http://127.0.0.1:8080/send-notification").then(res=>res.json())
+    let url = "https://af84-36-85-223-54.ngrok-free.app"
+    let resp = await fetch(url+"/send-notification").then(res=>res.json())
     console.log("From spa", resp);
 }
 
